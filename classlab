@@ -1,0 +1,44 @@
+from datetime import *
+
+class Person:
+    def __init__(self, tmpSSN, tmpLastName, tmpFirstName, tmpBirthYr):
+        self.__ssn = tmpSSN
+        self.__lastName = tmpLastName
+        self.__firstName = tmpFirstName
+        self.__birthYr = date(tmpBirthYr, 1, 1).year
+
+    def __str__(self):
+        tmp = ""
+        tmp += "SSN:\t \t" + str(self.__ssn) + "\n"
+        tmp += "Last Name:\t" + self.__lastName + "\n"
+        tmp += "First Name:\t" + self.__firstName + "\n"
+        tmp += "Birth Year:\t" + str(self.__birthYr)
+        return tmp
+
+    def setLastName(self, newLast):
+        self.__lastName = newLast
+
+    def setFirstName(self, newFirst):
+        self.__firstName = newFirst
+
+    def getSSN(self):
+        return self.__ssn
+
+    def getLastName(self):
+        return self.__lastName
+
+    def getFirstName(self):
+        return self.__firstName
+
+    def getBirthYear (self):
+        return self.__birthYear
+
+    def computeAge(self)
+        return 
+    
+p1 = Person(111, "Johnson", "Joe", 1989)
+
+p1.setSSN(222)
+p1.setLastName("Frank")
+print(p1)
+
